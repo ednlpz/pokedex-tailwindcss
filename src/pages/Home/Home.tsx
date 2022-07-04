@@ -1,9 +1,9 @@
 import { useState, useEffect, useRef } from 'react'
-import useFetch from '../Hooks/useFetch'
+import useFetch from '../../components/Hooks/useFetch'
 import Layout from '../Layout/Layout'
-import Pagination from '../Pagination/Pagination'
-import PokemonList from '../PokemonList/PokemonList'
-import PaginationContext from '../Contexts/PaginationContext'
+import Pagination from '../../components/Pagination/Pagination'
+import PokemonList from '../../components/PokemonList/PokemonList'
+import PaginationContext from '../../components/Contexts/PaginationContext'
 
 const Home = () => {
   const [pageNumber, setPageNumber] = useState(0)
@@ -22,7 +22,7 @@ const Home = () => {
         pageNumber! * itemsPerPage.current!
       }&limit=${itemsPerPage.current}`
     )
-  }, [pageNumber, itemsPerPage.current])
+  }, [pageNumber, itemsPerPage])
 
   return (
     <Layout>
