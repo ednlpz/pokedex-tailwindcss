@@ -4,15 +4,14 @@ type fetchStatus = 'success' | 'failed' | 'loading'
 
 type responseData = { [key: string]: any }
 
-type cache = { [key: string]: responseData }
+type cache<T> = { [key: string]: T }
 
 const useFetch = (link?: string) => {
   const [responseData, setResponseData] = useState<responseData>()
   const fetchStatus = useRef<fetchStatus>('loading')
-  const cache = useRef<cache>({})
+  const cache = useRef<cache<responseData>>({})
   useEffect(() => {
     if (!link) return
-
     const fetchData = async () => {
       if (link) {
         try {
@@ -28,6 +27,7 @@ const useFetch = (link?: string) => {
           }
 
           const data = await response.json()
+          cache.current[link] = data
           setResponseData(data)
 
           fetchStatus.current = 'success'

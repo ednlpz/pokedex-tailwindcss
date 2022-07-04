@@ -80,60 +80,60 @@ const PoisonType = () => (
 
 const ElectricType = () => (
   <div className={'pokemonTypeContainer bg-yellow-600 text-yellow-50 '}>
-    Poison
+    Electric
   </div>
 )
 
 const GroundType = () => (
   <div className={'pokemonTypeContainer bg-stone-500 text-stone-50 '}>
-    Poison
+    Ground
   </div>
 )
 
 const RockType = () => (
   <div className={'pokemonTypeContainer bg-stone-700 text-stone-50 '}>
-    Poison
+    Rock
   </div>
 )
 
 const GhostType = () => (
   <div className={'pokemonTypeContainer bg-indigo-900 text-indigo-50 '}>
-    Poison
+    Ghost
   </div>
 )
 
 const SteelType = () => (
   <div className={'pokemonTypeContainer bg-slate-500 text-slate-50 '}>
-    Poison
+    Steel
   </div>
 )
 
 const PsychicType = () => (
-  <div className={'pokemonTypeContainer bg-pink-600 text-pink-50 '}>Poison</div>
+  <div className={'pokemonTypeContainer bg-pink-600 text-pink-50 '}>Psychic</div>
 )
 
 const IceType = () => (
-  <div className={'pokemonTypeContainer bg-sky-400 text-sky-50 '}>Poison</div>
+  <div className={'pokemonTypeContainer bg-sky-400 text-sky-50 '}>Ice</div>
 )
 
 const DragonType = () => (
   <div className={'pokemonTypeContainer bg-indigo-600 text-indigo-50 '}>
-    Poison
+    Dragon
   </div>
 )
 
 const DarkType = () => (
   <div className={'pokemonTypeContainer bg-amber-900 text-amber-50 '}>
-    Poison
+    Dark
   </div>
 )
 
 const FairyType = () => (
-  <div className={'pokemonTypeContainer bg-pink-400 text-pink-50 '}>Poison</div>
+  <div className={'pokemonTypeContainer bg-pink-400 text-pink-50 '}>Fairy</div>
 )
 
 const UnknownType = () => (
-  <div className={'pokemonTypeContainer bg-emerald-800 text-emerald-50 '}>Poison</div>
+  <div className={'pokemonTypeContainer bg-emerald-800 text-emerald-50 '}>Unknown</div>
 )
 
 export default PokemonType
